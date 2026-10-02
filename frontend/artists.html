@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artists</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="albums.html">Albums</a>
+    <a href="songs.html">Songs</a>
+</nav>
+
+<div class="container">
+
+    <h2>Artists</h2>
+
+    <input id="name" placeholder="Artist Name">
+    <input id="genre" placeholder="Genre">
+    <input id="listeners" placeholder="Monthly Listeners">
+
+
+    <button id="saveBtn" onclick="saveArtist()">Add Artist</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>Genre</th><th>Listeners</th><th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="artistTable"></tbody>
+    </table>
+
+</div>
+
+
+<script src="artists.js"></script>
+
+</body>
+</html>

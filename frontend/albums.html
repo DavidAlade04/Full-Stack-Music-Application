@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Albums</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="albums.html">Albums</a>
+    <a href="songs.html">Songs</a>
+</nav>
+
+<div class="container">
+
+<h2>Albums</h2>
+
+<input id="albumName" placeholder="Album Name">
+<input id="year" placeholder="Release Year">
+<input id="listens" placeholder="Listens">
+<input id="artistId" placeholder="Artist ID">
+
+
+<button id="saveBtn" onclick="saveAlbum()">Add Album</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th><th>Name</th><th>Year</th><th>Listens</th><th>Artist ID</th><th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="albumTable"></tbody>
+</table>
+
+</div>
+
+
+<script src="albums.js"></script>
+
+</body>
+</html>

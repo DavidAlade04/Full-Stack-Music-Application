@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+nav {
+    background: #111;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* HEADER */
+th {
+    padding: 12px;
+    text-align: left;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/* CELLS */
+td {
+    padding: 12px;
+    text-align: left;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+}
+
+/* ROW HOVER (apply to cells, not tr) */
+tr:hover td {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+input {
+    margin: 5px;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #222;
+    color: white;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    background: #000; /* important fallback */
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+/* centered video */
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    height: auto;
+
+    object-fit: cover;
+    opacity: 0.7;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* everything else sits above it */
+nav, .container {
+    position: relative;
+    z-index: 1;
+}
+input, select, textarea {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+
+    backdrop-filter: blur(6px);
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+input:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.25);
+}
+button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
